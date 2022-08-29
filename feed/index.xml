@@ -37,10 +37,9 @@
 				<category><![CDATA[Allgemein]]></category>
 		<guid isPermaLink="false">/?p=1</guid>
 
-					<description><![CDATA[Willkommen bei WordPress. Dies ist Ihr erster Beitrag. Bearbeiten oder löschen Sie ihn und beginnen Sie mit dem Schreiben!]]></description>
-										<content:encoded><![CDATA[
-<p>Willkommen bei WordPress. Dies ist Ihr erster Beitrag. Bearbeiten oder löschen Sie ihn und beginnen Sie mit dem Schreiben!</p>
-]]></content:encoded>
+					<description><![CDATA[<p>Willkommen bei WordPress. Dies ist Ihr erster Beitrag. Bearbeiten oder löschen Sie ihn und beginnen Sie mit dem Schreiben!</p>
+<p>The post <a href="/hallo-welt/">Hallo Welt!</a> first appeared on <a href="/">Bau Stei Trio</a>.</p>]]></description>
+										<content:encoded><![CDATA[<p>Willkommen bei WordPress. Dies ist Ihr erster Beitrag. Bearbeiten oder löschen Sie ihn und beginnen Sie mit dem Schreiben!</p><p>The post <a href="/hallo-welt/">Hallo Welt!</a> first appeared on <a href="/">Bau Stei Trio</a>.</p>]]></content:encoded>
 					
 					<wfw:commentRss>/hallo-welt/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>
