@@ -10,7 +10,7 @@
 <channel>
 	<title>admin - Bau Stei Trio</title>
 	<atom:link href="/author/admin/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<link></link>
 	<description>Das Ensemble mit Akkordeon, Euphonium und Trompete</description>
 	<lastBuildDate>Sat, 27 Aug 2022 14:28:13 +0000</lastBuildDate>
 	<language>de-CH</language>
@@ -18,12 +18,12 @@
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0.2</generator>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
 
 <image>
 	<url>/wp-content/uploads/2022/08/cropped-512x512-1-32x32.png</url>
 	<title>admin - Bau Stei Trio</title>
-	<link>/</link>
+	<link></link>
 	<width>32</width>
 	<height>32</height>
 </image> 
@@ -38,8 +38,8 @@
 		<guid isPermaLink="false">/?p=1</guid>
 
 					<description><![CDATA[<p>Willkommen bei WordPress. Dies ist Ihr erster Beitrag. Bearbeiten oder löschen Sie ihn und beginnen Sie mit dem Schreiben!</p>
-<p>The post <a href="/hallo-welt/">Hallo Welt!</a> first appeared on <a href="/">Bau Stei Trio</a>.</p>]]></description>
-										<content:encoded><![CDATA[<p>Willkommen bei WordPress. Dies ist Ihr erster Beitrag. Bearbeiten oder löschen Sie ihn und beginnen Sie mit dem Schreiben!</p><p>The post <a href="/hallo-welt/">Hallo Welt!</a> first appeared on <a href="/">Bau Stei Trio</a>.</p>]]></content:encoded>
+<p>The post <a href="/hallo-welt/">Hallo Welt!</a> first appeared on <a href="">Bau Stei Trio</a>.</p>]]></description>
+										<content:encoded><![CDATA[<p>Willkommen bei WordPress. Dies ist Ihr erster Beitrag. Bearbeiten oder löschen Sie ihn und beginnen Sie mit dem Schreiben!</p><p>The post <a href="/hallo-welt/">Hallo Welt!</a> first appeared on <a href="">Bau Stei Trio</a>.</p>]]></content:encoded>
 					
 					<wfw:commentRss>/hallo-welt/feed/</wfw:commentRss>
 			<slash:comments>0</slash:comments>

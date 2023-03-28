@@ -9,13 +9,13 @@
 	<title>
 	Kommentare für Bau Stei Trio	</title>
 	<atom:link href="/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<link></link>
 	<description>Das Ensemble mit Akkordeon, Euphonium und Trompete</description>
-	<lastBuildDate>Mon, 10 Oct 2022 19:28:58 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 28 Mar 2023 20:17:58 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.0.2</generator>
+	<generator>https://wordpress.org/?v=6.1.1</generator>
 </channel>
 </rss>
