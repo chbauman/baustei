@@ -19,7 +19,7 @@
 			<head>
 				<title>
 					<xsl:choose>
-						<xsl:when test="$fileType='Sitemap' or $fileType='RSS'">XSL?SIMPLY_STATIC_PAGE=1333 Sitemap</xsl:when>
+						<xsl:when test="$fileType='Sitemap' or $fileType='RSS'">Sitemap</xsl:when>
 						<xsl:otherwise>Sitemap Index</xsl:otherwise>
 					</xsl:choose>
 				</title>
@@ -145,7 +145,7 @@
 				</xsl:variable>
 
 				<xsl:call-template name="Header">
-					<xsl:with-param name="title">XSL?SIMPLY_STATIC_PAGE=1333 Sitemap</xsl:with-param>
+					<xsl:with-param name="title">Sitemap</xsl:with-param>
 					<xsl:with-param name="amountOfURLs" select="$amountOfURLs"/>
 					<xsl:with-param name="fileType" select="$fileType"/>
 				</xsl:call-template>
@@ -219,7 +219,7 @@
 
 			<svg width="6" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.727 7.06L3.78 4 .727.94l.94-.94 4 4-4 4-.94-.94z" fill="#141B38"/></svg>
 
-					<span>XSL?SIMPLY_STATIC_PAGE=1333 Sitemap</span>
+					<span>Sitemap</span>
 				</div>		<div class="table-wrapper">
 			<table cellpadding="3">
 				<thead>
@@ -263,7 +263,7 @@
 					<a href="/sitemap.xml"><span>Sitemap Index</span></a>
 						<svg width="6" height="8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M.727 7.06L3.78 4 .727.94l.94-.94 4 4-4 4-.94-.94z" fill="#141B38"/></svg>
 
-					<span>XSL?SIMPLY_STATIC_PAGE=1333 Sitemap</span>
+					<span>Sitemap</span>
 				</div>		<div class="table-wrapper">
 			<table cellpadding="3">
 				<thead>
@@ -376,7 +376,7 @@
 						</xsl:choose>
 					</xsl:otherwise>
 				</xsl:choose>
-				and was generated on 28. März 2023 at 22:20			</p>
+				and was generated on 21. Mai 2023 at 22:43			</p>
 		</xsl:if>
 	</div>
 </xsl:template>
