@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- This sitemap was dynamically generated on 20. Juni 2023 at 21:09 by All in One SEO v4.3.9 - the original SEO plugin for WordPress. -->
+<!-- This sitemap was dynamically generated on 21. Juni 2023 at 18:39 by All in One SEO v4.3.9 - the original SEO plugin for WordPress. -->
 
 <?xml-stylesheet type="text/xsl" href="/default.xsl?sitemap=attachment"?>
 <urlset
@@ -18,12 +18,18 @@
 		<lastmod><![CDATA[2022-09-07T21:06:42+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[/wp-content/uploads/2022/09/20220904_160026_small.jpg]]></image:loc>
+		</image:image>
 	</url>
 	<url>
 		<loc><![CDATA[/flyer_2022_09_04/]]></loc>
 		<lastmod><![CDATA[2022-08-29T20:44:06+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[/wp-content/uploads/2022/08/Flyer_2022_09_04.jpeg]]></image:loc>
+		</image:image>
 	</url>
 	<url>
 		<loc><![CDATA[/agenda/bst_2022_09_04/]]></loc>
@@ -36,23 +42,35 @@
 		<lastmod><![CDATA[2022-08-29T18:39:56+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[/wp-content/uploads/2022/08/header_img-2.png]]></image:loc>
+		</image:image>
 	</url>
 	<url>
 		<loc><![CDATA[/cropped-512x512-1-png/]]></loc>
 		<lastmod><![CDATA[2022-08-29T18:09:57+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[/wp-content/uploads/2022/08/cropped-512x512-1.png]]></image:loc>
+		</image:image>
 	</url>
 	<url>
 		<loc><![CDATA[/512x512/]]></loc>
 		<lastmod><![CDATA[2022-08-29T18:09:50+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[/wp-content/uploads/2022/08/512x512.png]]></image:loc>
+		</image:image>
 	</url>
 	<url>
 		<loc><![CDATA[/logo/]]></loc>
 		<lastmod><![CDATA[2022-08-29T17:39:13+00:00]]></lastmod>
 		<changefreq><![CDATA[weekly]]></changefreq>
 		<priority><![CDATA[0.7]]></priority>
+		<image:image>
+			<image:loc><![CDATA[/wp-content/uploads/2022/08/logo.png]]></image:loc>
+		</image:image>
 	</url>
 </urlset>
