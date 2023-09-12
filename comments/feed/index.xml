@@ -11,11 +11,11 @@
 	<atom:link href="/comments/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description>Das Ensemble mit Akkordeon, Euphonium und Trompete</description>
-	<lastBuildDate>Sun, 20 Aug 2023 17:15:08 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 12 Sep 2023 17:21:05 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.3</generator>
+	<generator>https://wordpress.org/?v=6.3.1</generator>
 </channel>
 </rss>
