@@ -12,13 +12,13 @@
 	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
 	<link></link>
 	<description>Das Ensemble mit Akkordeon, Euphonium und Trompete</description>
-	<lastBuildDate>Wed, 01 Nov 2023 15:05:12 +0000</lastBuildDate>
+	<lastBuildDate>Sat, 20 Apr 2024 09:38:33 +0000</lastBuildDate>
 	<language>de-CH</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=6.3.2</generator>
+	<generator>https://wordpress.org/?v=6.5.2</generator>
 
 <image>
 	<url>/wp-content/uploads/2022/08/cropped-512x512-1-32x32.png</url>
