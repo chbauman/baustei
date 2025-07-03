@@ -1,5 +1,13 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## TODO
+
+- Agenda: Kombinieren mit vergangenen Auftritten, filtern nach
+  vergangen / zukünftigen Auftritten
+- Kontaktformular
+- Hörproben
+- Static export & upload to Github
+
 ## Getting Started
 
 First, run the development server:
