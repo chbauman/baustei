@@ -11,7 +11,7 @@ const parseDate = (dateStr: string) => {
   return new Date(year, month - 1, day);
 };
 
-type EventList = object[];
+type EventList = { Wann: string; Wo: string; Was: string }[];
 type DateData = { past: EventList; future: EventList };
 
 /**
@@ -20,10 +20,10 @@ type DateData = { past: EventList; future: EventList };
  */
 function parseCSV(text: string): DateData {
   // Parse csv into objects
-  const events: EventList = Papa.parse(text, {
+  const events = Papa.parse(text, {
     header: true,
     skipEmptyLines: true,
-  }).data;
+  }).data as unknown as EventList;
 
   const today = new Date();
   const pastEvents: typeof events = [];
@@ -101,7 +101,7 @@ const EventList = ({ data }: { data: EventList }) => {
       <tbody>
         {data.map((row, idx) => (
           <tr key={idx} className="hover:bg-gray-50 dark:hover:bg-gray-800">
-            {Object.entries(row).map((keyAndCell: any) => (
+            {Object.entries(row).map((keyAndCell) => (
               <td key={keyAndCell[0]} className="px-4 py-2 border">
                 {keyAndCell[1]}
               </td>

@@ -6,9 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out --nojekyll --cname bau-stei.ch"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "next": "15.3.4",
     "papaparse": "^5.5.3",
     "react": "^19.0.0",
@@ -19,6 +22,7 @@
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/papaparse": "^5.3.16",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
