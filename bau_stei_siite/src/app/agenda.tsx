@@ -88,27 +88,29 @@ export const useAgenda = () => {
 
 const EventList = ({ data }: { data: EventList }) => {
   return (
-    <table className="min-w-full border border-gray-300 dark:border-gray-600">
-      <thead className="bg-gray-100 dark:bg-gray-700">
-        <tr>
-          {Object.keys(data[0]).map((key) => (
-            <th key={key} className="px-4 py-2 border">
-              {key}
-            </th>
-          ))}
-        </tr>
-      </thead>
-      <tbody>
-        {data.map((row, idx) => (
-          <tr key={idx} className="hover:bg-gray-50 dark:hover:bg-gray-800">
-            {Object.entries(row).map((keyAndCell) => (
-              <td key={keyAndCell[0]} className="px-4 py-2 border">
-                {keyAndCell[1]}
-              </td>
+    <div className="overflow-x-auto">
+      <table className="min-w-full border border-gray-300 dark:border-gray-600">
+        <thead className="bg-gray-100 dark:bg-gray-700">
+          <tr>
+            {Object.keys(data[0]).map((key) => (
+              <th key={key} className="px-4 py-2 border">
+                {key}
+              </th>
             ))}
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {data.map((row, idx) => (
+            <tr key={idx} className="hover:bg-gray-50 dark:hover:bg-gray-800">
+              {Object.entries(row).map((keyAndCell) => (
+                <td key={keyAndCell[0]} className="px-4 py-2 border">
+                  {keyAndCell[1]}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 };

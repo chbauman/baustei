@@ -47,7 +47,11 @@ export default function Home() {
 
           <SectionHeading title="Aufnahmen" />
           <p className="mb-3 text-gray-700 dark:text-gray-300 text-lg">
-            Frühlingstanz
+            <strong>Frühlingstanz:</strong>
+            <br />
+            Eine Eigenkomposition des Bau Stei Trios, entstanden im Frühling
+            2024. Komponiert von Christian Baumann. Aufgenommen beim Auftritt am
+            06.06.2025.
           </p>
           <AudioPlayer source="fruehlingstanz.mp3" />
 
