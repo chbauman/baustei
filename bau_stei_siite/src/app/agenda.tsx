@@ -1,23 +1,53 @@
 "use client";
 
+import Papa from "papaparse";
 import { useEffect, useState } from "react";
 
 const sheetId =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vTzrVnw7gr06PvA5zJAwGaoJqM0FM98bhHa8SrqddbuIlaZmt4A6tpW2l7c4gJc7EJxhoc-_RtA-yY4/pub?output=csv";
 
+const parseDate = (dateStr: string) => {
+  const [day, month, year] = dateStr.split(".").map(Number);
+  return new Date(year, month - 1, day);
+};
+
+type EventList = object[];
+type DateData = { past: EventList; future: EventList };
+
 /**
  * Parse Google Sheet CSV into dictionary.
  * @param text Raw text.
  */
-function parseCSV(text: string) {
-  const rows = text
-    .trim()
-    .split("\n")
-    .map((row) => row.split(","));
-  const [headers, ...data] = rows;
-  return data.map((row) =>
-    Object.fromEntries(row.map((cell, i) => [headers[i], cell]))
+function parseCSV(text: string): DateData {
+  // Parse csv into objects
+  const events: EventList = Papa.parse(text, {
+    header: true,
+    skipEmptyLines: true,
+  }).data;
+
+  const today = new Date();
+  const pastEvents: typeof events = [];
+  const futureEvents: typeof events = [];
+
+  // Separate by past / future
+  for (const event of events) {
+    const eventDate = parseDate(event.Wann);
+    if (eventDate < today) {
+      pastEvents.push(event);
+    } else {
+      futureEvents.push(event);
+    }
+  }
+
+  // Sort each list by date ascending
+  pastEvents.sort(
+    (a, b) => parseDate(b.Wann).getTime() - parseDate(a.Wann).getTime()
   );
+  futureEvents.sort(
+    (a, b) => parseDate(a.Wann).getTime() - parseDate(b.Wann).getTime()
+  );
+
+  return { past: pastEvents, future: futureEvents };
 }
 
 /**
@@ -25,8 +55,8 @@ function parseCSV(text: string) {
  * Loads data in CSV form from Google Sheet API and displays it as table.
  * @returns React component.
  */
-export default function Agenda() {
-  const [data, setData] = useState<any[]>([]);
+export const useAgenda = () => {
+  const [data, setData] = useState<DateData>({ future: [], past: [] });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -46,9 +76,17 @@ export default function Agenda() {
   }, []);
 
   if (loading) {
-    return <div className="p-6">Loading...</div>;
+    const loadingComp = <div className="p-6">Loading...</div>;
+    return [loadingComp, loadingComp] as const;
   }
 
+  return [
+    <EventList data={data.future} key="future" />,
+    <EventList data={data.past} key="past" />,
+  ] as const;
+};
+
+const EventList = ({ data }: { data: EventList }) => {
   return (
     <table className="min-w-full border border-gray-300 dark:border-gray-600">
       <thead className="bg-gray-100 dark:bg-gray-700">
@@ -73,4 +111,4 @@ export default function Agenda() {
       </tbody>
     </table>
   );
-}
+};

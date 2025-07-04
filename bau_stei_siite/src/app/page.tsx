@@ -1,16 +1,25 @@
-import Agenda from "./agenda";
+"use client";
+
 import Cover from "./cover";
 import Footer from "./footer";
-import SectionHeading from "./heading";
+import { AudioPlayer, SectionHeading, VideoEmbed } from "./common";
+import { useAgenda } from "./agenda";
 
 export default function Home() {
+  const [futureEvents, pastEvents] = useAgenda();
+
   return (
     <div className="min-h-screen flex flex-col">
       <Cover />
       <main className="flex-grow">
         <div className="max-w-5xl mx-auto px-4">
+          <VideoEmbed youtubeId="f2eBIpCaL2s" />
+
           <SectionHeading title="Agenda" />
-          <Agenda />
+          <p className="mb-3 text-gray-700 dark:text-gray-300 text-lg">
+            Unsere nächsten Auftritte finden an folgenden Daten statt:
+          </p>
+          {futureEvents}
 
           <SectionHeading title="Das Trio" />
           <section className="max-w-3xl mx-auto px-4 py-2 text-center">
@@ -35,6 +44,41 @@ export default function Home() {
               </li>
             </ul>
           </section>
+
+          <SectionHeading title="Aufnahmen" />
+          <p className="mb-3 text-gray-700 dark:text-gray-300 text-lg">
+            Frühlingstanz
+          </p>
+          <AudioPlayer source="fruehlingstanz.mp3" />
+
+          <SectionHeading title="Vergangene Auftritte" />
+          <p className="mb-3 text-gray-700 dark:text-gray-300 text-lg">
+            An folgenden Anlässen haben wir schon gespielt:
+          </p>
+          {pastEvents}
+
+          <SectionHeading title="Kontakt" />
+          <p className="mb-6 text-gray-700 dark:text-gray-300 text-lg">
+            Wollen Sie uns für einen Anlass buchen oder haben sonst ein
+            Anliegen? Kontaktieren Sie uns über{" "}
+            <a
+              href="mailto:bausteitrio@gmail.com"
+              aria-label="Email"
+              className="text-blue-600 hover:underline"
+            >
+              bausteitrio@gmail.com
+            </a>{" "}
+            oder folgen Sie uns auf{" "}
+            <a
+              href="https://instagram.com/bau_stei_trio"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="text-blue-600 hover:underline"
+            >
+              Instagram.
+            </a>
+          </p>
 
           <SectionHeading title="Über Uns" />
           <p className="mb-6 text-gray-700 dark:text-gray-300 text-lg">
