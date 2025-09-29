@@ -1,6 +1,6 @@
 # The Website of the Bau Stei Trio
 
-Check it out at [https://bau-stei.ch](https://bau-stei.ch):
+Check it out at [https://bau-stei.ch](https://bau-stei.ch)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
