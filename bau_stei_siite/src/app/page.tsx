@@ -13,7 +13,7 @@ export default function Home() {
       <Cover />
       <main className="flex-grow">
         <div className="max-w-5xl mx-auto px-4">
-          <VideoEmbed youtubeId="f2eBIpCaL2s" />
+          <VideoEmbed youtubeId="f2eBIpCaL2s" title="Bau Stei Trio – Live Auftritt" />
 
           <SectionHeading title="Agenda" />
           <p className="mb-3 text-gray-700 dark:text-gray-300 text-lg">
