@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  weight: ["600", "700", "800"],
   subsets: ["latin"],
 });
 
@@ -31,6 +32,9 @@ export const metadata: Metadata = {
     "Livemusik",
     "Schweiz",
   ],
+  alternates: {
+    canonical: "https://bau-stei.ch",
+  },
   openGraph: {
     title: "Bau Stei Trio",
     description:
@@ -41,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Bau Stei Trio",
     images: [
       {
-        url: "/cover_bau_stei.jpg",
+        url: "/og_image.jpg",
         width: 1200,
         height: 630,
         alt: "Bau Stei Trio – Akkordeon, Euphonium und Trompete",
@@ -53,7 +57,7 @@ export const metadata: Metadata = {
     title: "Bau Stei Trio",
     description:
       "Das Bau Stei Trio aus Schaffhausen – ein Ensemble mit Akkordeon, Euphonium und Trompete.",
-    images: ["/cover_bau_stei.jpg"],
+    images: ["/og_image.jpg"],
   },
   robots: {
     index: true,
@@ -91,9 +95,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${playfair.variable} antialiased`}>
         {children}
       </body>
     </html>
