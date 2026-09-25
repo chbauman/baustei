@@ -21,6 +21,13 @@ export const coverProps: ComponentProps<typeof Cover> = {
 
 export const footerProps: ComponentProps<typeof Footer> = {
   copyrightName: "Bau Stei Trio",
+  logoSrc: "/logo_weiss_transparent.png",
+  logoAlt: "Bau Stei Trio Logo",
+  logoWidth: 71,
+  logoHeight: 50,
+  // The logo is a white silhouette meant for photo overlays; invert it to
+  // black for the footer's light background, and back to white in dark mode.
+  logoClassName: "invert dark:invert-0",
   links: [
     { type: "email", href: "mailto:bausteitrio@gmail.com" },
     { type: "instagram", href: "https://instagram.com/bau_stei_trio" },

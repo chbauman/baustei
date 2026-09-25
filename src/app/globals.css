@@ -6,8 +6,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --brand: #c026d3;
-  --brand-dark: #a21caf;
+  --brand: #1a77ff;
+  --brand-dark: #005de6;
 }
 
 @theme inline {
@@ -23,8 +23,8 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
-    --brand: #e879f9;
-    --brand-dark: #c026d3;
+    --brand: #86b5f9;
+    --brand-dark: #3d88f5;
   }
 }
 
