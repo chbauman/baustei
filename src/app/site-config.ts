@@ -14,9 +14,10 @@ export const coverProps: ComponentProps<typeof Cover> = {
   backgroundImageSrc: "/cover_bau_stei.jpg",
   backgroundImageAlt:
     "Bau Stei Trio – Ensemble mit Akkordeon, Euphonium und Trompete",
-  backgroundImageWidth: 2081,
-  backgroundImageHeight: 771,
-  overlayTopPercent: 56,
+  // On mobile the natural image ratio is too short for logo + tagline, which
+  // then get clipped; use a taller crop there and the full image from md up.
+  backgroundAspectClassName: "aspect-[4/3] md:aspect-[2081/771]",
+  overlayTopPercent: 50,
 };
 
 export const footerProps: ComponentProps<typeof Footer> = {
