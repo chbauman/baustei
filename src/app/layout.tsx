@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Inter, Rubik } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -7,8 +7,9 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+// Rounded geometric sans that matches the lettering in the logo.
+const rubik = Rubik({
+  variable: "--font-rubik",
   weight: ["600", "700", "800"],
   subsets: ["latin"],
 });
@@ -95,7 +96,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${inter.variable} ${playfair.variable} antialiased`}>
+      <body className={`${inter.variable} ${rubik.variable} antialiased`}>
         {children}
       </body>
     </html>
