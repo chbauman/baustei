@@ -16,7 +16,7 @@
   --color-brand: var(--brand);
   --color-brand-dark: var(--brand-dark);
   --font-sans: var(--font-inter);
-  --font-heading: var(--font-playfair);
+  --font-heading: var(--font-rubik);
 }
 
 @media (prefers-color-scheme: dark) {

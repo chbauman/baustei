@@ -12,12 +12,14 @@ import {
   stripMarkdownLinks,
   toISODate,
 } from "@emeki/band-site-kit";
-import { SHEET_ID, coverProps, footerProps } from "./site-config";
+import { NO_GIG_TEXT, SHEET_ID, coverProps, footerProps } from "./site-config";
 
 export default async function Home() {
   // There is no 'use client' directive, so this is called only
   // once at build time!
-  const agenda = await fetchAgenda(SHEET_ID);
+  const fetched = await fetchAgenda(SHEET_ID);
+  // No meta sheet is set up, so the library would show its English fallback.
+  const agenda = { ...fetched, noGigText: NO_GIG_TEXT };
 
   const eventsJsonLd = agenda.future.map((event) => ({
     "@context": "https://schema.org",
