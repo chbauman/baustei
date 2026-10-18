@@ -12,12 +12,12 @@ import {
   stripMarkdownLinks,
   toISODate,
 } from "@emeki/band-site-kit";
-import { SHEET_ID, coverProps, footerProps } from "./site-config";
+import { META_SHEET_ID, SHEET_ID, coverProps, footerProps } from "./site-config";
 
 export default async function Home() {
   // There is no 'use client' directive, so this is called only
   // once at build time!
-  const agenda = await fetchAgenda(SHEET_ID);
+  const agenda = await fetchAgenda(SHEET_ID, META_SHEET_ID);
 
   const eventsJsonLd = agenda.future.map((event) => ({
     "@context": "https://schema.org",
@@ -47,7 +47,11 @@ export default async function Home() {
         <div className="max-w-5xl mx-auto px-4">
           <VideoEmbed youtubeId="f2eBIpCaL2s" title="Bau Stei Trio – Live Auftritt" />
 
-          <AgendaProvider sheetId={SHEET_ID} initialData={agenda}>
+          <AgendaProvider
+            sheetId={SHEET_ID}
+            metaSheetId={META_SHEET_ID}
+            initialData={agenda}
+          >
             <SectionHeading title="Agenda" />
             <p className="mb-3 text-gray-700 dark:text-gray-300 text-lg">
               Unsere nächsten Auftritte finden an folgenden Daten statt:

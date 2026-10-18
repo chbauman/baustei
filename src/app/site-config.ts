@@ -4,6 +4,11 @@ import { Cover, Footer } from "@emeki/band-site-kit";
 export const SHEET_ID =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vTzrVnw7gr06PvA5zJAwGaoJqM0FM98bhHa8SrqddbuIlaZmt4A6tpW2l7c4gJc7EJxhoc-_RtA-yY4/pub?output=csv";
 
+// Header-less (key, value) tab of the same published sheet — currently just a
+// "no-gig-text" row for the empty-agenda message.
+export const META_SHEET_ID =
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vTzrVnw7gr06PvA5zJAwGaoJqM0FM98bhHa8SrqddbuIlaZmt4A6tpW2l7c4gJc7EJxhoc-_RtA-yY4/pub?gid=689067910&single=true&output=csv";
+
 export const coverProps: ComponentProps<typeof Cover> = {
   bandName: "Bau Stei Trio",
   logoSrc: "/logo_weiss_transparent.png",
